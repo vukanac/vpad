@@ -243,10 +243,16 @@ $('.showmenubar').click(function(){
 $('.show-menubar').click(function(){
 	if($(this).hasClass("hide1")){
 		$(this).removeClass("hide1");
-		
-		$("#center_content").fadeTo("slow", 1,function(){
-			$(this).show();
-		});
+		//var i=0;
+		//var c =$("#left_menu");
+		//var c1 = c*0.042;
+		////for(i=0;i<c1;i++)
+		//{
+		//	setTimeout(function(){
+		//		$("#center_content").css("margin-left", c);	
+		//		c = c + 4;
+		//	},42);
+		//}
 		$("#center_content").css("margin-left", $("#left_menu").width());			
 		$("#left_menu").show("slow");		
 	}else{
@@ -254,8 +260,5 @@ $('.show-menubar').click(function(){
 		
 		$("#left_menu").hide("slow");
 		$("#center_content").css("margin-left", 0);
-		$("#center_content").fadeTo("slow",1, function(){
-			$(this).show();
-		});
 	}
 });
