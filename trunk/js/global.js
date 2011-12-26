@@ -239,7 +239,6 @@ $('.showmenubar').click(function(){
 		});
 	}
 });
-
 $('.show-menubar').click(function(){
 	if($(this).hasClass("hide1")){
 		$(this).removeClass("hide1");
