@@ -244,15 +244,18 @@ $('.show-menubar').click(function(){
 	if($(this).hasClass("hide1")){
 		$(this).removeClass("hide1");
 		
-		d=$("#left_menu").width();
+		$("#center_content").fadeTo("slow", 1,function(){
+			$(this).show();
+		});
+		$("#center_content").css("margin-left", $("#left_menu").width());			
 		$("#left_menu").show("slow");		
-		$("#center_content").animate({margin:"0 0 0 200"},"slow");			
-				
 	}else{
 		$(this).addClass("hide1");	
 		
 		$("#left_menu").hide("slow");
-		$("#center_content").animate({margin:0},"slow");
-		
+		$("#center_content").css("margin-left", 0);
+		$("#center_content").fadeTo("slow",1, function(){
+			$(this).show();
+		});
 	}
 });
