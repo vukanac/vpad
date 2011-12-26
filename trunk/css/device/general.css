@@ -113,8 +113,7 @@ small, sup, sub {
     text-align: right !important;
 }
 .fl {
-    float: left !important;
-	padding-left: 200px;
+    float: left !important;	
 }
 .fr {
     float: right !important;
