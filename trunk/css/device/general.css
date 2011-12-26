@@ -114,6 +114,7 @@ small, sup, sub {
 }
 .fl {
     float: left !important;
+	padding-left: 200px;
 }
 .fr {
     float: right !important;
@@ -236,7 +237,7 @@ body.login {
 
 #wrapper > header > nav {
     height: 46px;
-    margin-left: 200px;
+    margin-left: 400px;
     padding-top: 10px;
 }
 
