@@ -257,3 +257,5 @@ $('.show-menubar').click(function(){
 		$("#center_content").animate({width:c},"fast");	
 	}
 });
+
+
