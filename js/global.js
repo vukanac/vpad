@@ -241,26 +241,19 @@ $('.showmenubar').click(function(){
 });
 
 $('.show-menubar').click(function(){
+	var d = $("#center_content").width() -$("#left_menu").width();
+	var c = $("#center_content").width() + $("#left_menu").width();
+	
 	if($(this).hasClass("hide1")){
 		$(this).removeClass("hide1");
-		//var i=0;
-		//var c =$("#left_menu");
-		//var c1 = c*0.042;
-		////for(i=0;i<c1;i++)
-		//{
-		//	setTimeout(function(){
-		//		$("#center_content").css("margin-left", c);	
-		//		c = c + 4;
-		//	},42);
-		//}
-		$("#center_content").animate({"left":"+=200px"},"slow");			
-		//$("#left_menu").slideUp("slow");		
+
+		$("#center_content").animate({"left":"+=200px"},"slow");	
 		$("#left_menu").animate({"left":"+=200px"},"slow");
+		$("#center_content").animate({width:d},"fast");	
 	}else{
 		$(this).addClass("hide1");	
-		
 		$("#left_menu").animate({"left":"-=200px"},"slow");
-		//$("#left_menu").slideDown("slow");
 		$("#center_content").animate({"left":"-=200px"},"slow");
+		$("#center_content").animate({width:c},"fast");	
 	}
 });
