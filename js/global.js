@@ -253,12 +253,14 @@ $('.show-menubar').click(function(){
 		//		c = c + 4;
 		//	},42);
 		//}
-		$("#center_content").css("margin-left", $("#left_menu").width());			
-		$("#left_menu").show("slow");		
+		$("#center_content").animate({"left":"+=200px"},"slow");			
+		//$("#left_menu").slideUp("slow");		
+		$("#left_menu").animate({"left":"+=200px"},"slow");
 	}else{
 		$(this).addClass("hide1");	
 		
-		$("#left_menu").hide("slow");
-		$("#center_content").css("margin-left", 0);
+		$("#left_menu").animate({"left":"-=200px"},"slow");
+		//$("#left_menu").slideDown("slow");
+		$("#center_content").animate({"left":"-=200px"},"slow");
 	}
 });
