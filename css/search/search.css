@@ -1,6 +1,23 @@
 .search_header
-{
-    height :30px;
-    border:solid 1px red;
+{    
     width :auto;
     }
+.search-left-menu
+{
+	border:1px solid red;
+	width:20%;
+	float:left;
+
+}
+.search-center-content
+{	
+	border:1px solid red;
+	width:50%;
+	float:left;
+}
+.search-right-menu
+{
+	border:1px solid red;
+	width:30%;
+	float:left;
+}
