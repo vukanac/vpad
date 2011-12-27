@@ -503,7 +503,8 @@ body.login {
     -khtml-border-radius: 6px 6px 0 0;
     -webkit-border-radius: 6px 6px 0 0;
     border-radius: 6px 6px 0 0;
-	margin-left: 200px;
+	left: 200px;
+	position:relative;
 }
 
 #wrapper > section > section > header {
