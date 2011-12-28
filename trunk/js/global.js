@@ -249,13 +249,15 @@ $('.show-menubar').click(function(){
 		
 		$("#center_content").animate({"left":"+=200px"},"slow");	
 		$("#left_menu").animate({"left":"+=200px"},"slow");
-		$("#center_content").animate({width:d},"slow");	
+		$("#center_content").css("width",d);
+		//$("#center_content").animate({width:d},"slow");	
 	}else{
 		$(this).addClass("hide1");	
 		$("#left_menu").animate({"left":"-=200px"},"slow");
 		$("#center_content").animate({"left":"-=200px"},"slow");
-		
-		$("#center_content").animate({width:c},"slow");	
+		$("#center_content").css("width",c);
+		//$("#center_content").css("margin-left","200px");
+		//$("#center_content").animate({width:c},"slow");	
 	}
 });
 
