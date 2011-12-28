@@ -18,8 +18,9 @@
 .search-right-menu
 {
 	border:1px solid #464646;
-	width:30%;
 	float:left;
+
+	width:30%;
 }
 .top-left-menu
 {
