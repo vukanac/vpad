@@ -7,24 +7,24 @@
 	border:1px solid #464646;
 	width:20%;
 	float:left;
-
+	height:457px;
 }
 .search-center-content
 {	
 	border:1px solid #464646;
 	width:48%;
 	float:left;
+	height:457px;
 }
 .search-right-menu
 {
 	border:1px solid #464646;
 	float:left;
-
+	height:457px;
 	width:30%;
 }
 .top-left-menu
 {
-    margin-top : 30px;
     font-size:x-large;
 	font-family:Times New Roman;
 	text-align : center;
@@ -32,9 +32,20 @@
     
 .image-top-left-menu
 {
+    text-align:center;
+    padding-left:0px;
  
     }    
     
+    
+    
+.title
+{
+    font-size:x-large;
+    font-family :Times New Roman;
+    text-align:center;
+    margin-top : 30px;
+    }    
     
 .search-button
 {
@@ -53,3 +64,10 @@
     font-family: Verdana,Arial,sans-serif;
     font-size: 1em;
     }
+    
+.checkbox
+{
+    margin-top :30px;
+    margin-left:30px;
+    text-decoration: none;
+        }
