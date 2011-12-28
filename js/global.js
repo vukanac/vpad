@@ -246,15 +246,16 @@ $('.show-menubar').click(function(){
 	
 	if($(this).hasClass("hide1")){
 		$(this).removeClass("hide1");
-
+		
 		$("#center_content").animate({"left":"+=200px"},"slow");	
 		$("#left_menu").animate({"left":"+=200px"},"slow");
-		$("#center_content").animate({width:d},"fast");	
+		$("#center_content").animate({width:d},"slow");	
 	}else{
 		$(this).addClass("hide1");	
 		$("#left_menu").animate({"left":"-=200px"},"slow");
 		$("#center_content").animate({"left":"-=200px"},"slow");
-		$("#center_content").animate({width:c},"fast");	
+		
+		$("#center_content").animate({width:c},"slow");	
 	}
 });
 
